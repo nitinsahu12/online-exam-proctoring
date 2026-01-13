@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f4f6f8;
+    color: #333;
+}
+
+.container {
+    width: 420px;
+    margin: 80px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #222;
+}
+
+p {
+    font-size: 15px;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #1e88e5;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1565c0;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1e88e5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.report-list {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.report-list li {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.risk-low {
+    color: green;
+    font-weight: bold;
+}
+
+.risk-medium {
+    color: orange;
+    font-weight: bold;
+}
+
+.risk-high {
+    color: red;
+    font-weight: bold;
+}
