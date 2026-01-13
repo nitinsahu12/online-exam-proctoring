@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Proctoring Report</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Proctoring Report</h2>
+
+    <ul class="report-list">
+        <li>Face Violations: {{ report.face }}</li>
+        <li>Eye Gaze Violations: {{ report.eye }}</li>
+        <li>Audio Violations: {{ report.audio }}</li>
+        <li><strong>Total Violations: {{ report.total }}</strong></li>
+        <li>
+            Risk Level:
+            <span class="
+                {% if report.risk == 'Low' %}risk-low
+                {% elif report.risk == 'Medium' %}risk-medium
+                {% else %}risk-high
+                {% endif %}
+            ">
+                {{ report.risk }}
+            </span>
+        </li>
+    </ul>
+
+    <a href="/">Back to Login</a>
+</div>
+
+</body>
+</html>

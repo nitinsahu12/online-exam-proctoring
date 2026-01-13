@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Online Exam Proctoring</h2>
+    <p>Enter your name to start the exam</p>
+
+    <form action="/exam">
+        <input type="text" placeholder="Student Name" required>
+        <button type="submit">Start Exam</button>
+    </form>
+</div>
+
+</body>
+</html>
